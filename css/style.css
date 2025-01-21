@@ -1,0 +1,643 @@
+/* ================================================= */
+/* ------------------ General CSS ------------------ */
+/* ================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #ffffff;
+}
+
+a {
+    color: #222222;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #FFD700;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+/* ================================================= */
+/* ---------------- Nav Header CSS ----------------- */
+/* ================================================= */
+
+#header {
+    background: #222222;
+    position: relative;
+    height: 60px;
+}
+
+#header .logo {
+    padding-left: 25px;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    line-height: 55px;
+}
+
+#header .logo img {
+    max-height: 65px;
+}
+
+.main-menu {
+    padding: 0 130px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.main-menu ul li:hover a,
+.main-menu ul li.active a {
+    color: #cce55e;
+}
+
+.main-menu ul li a {
+    color: #d9d9d9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 0 10px;
+    line-height: 60px;
+    display: block;
+    transition: color .25s ease, background-color .25s ease;
+}
+.mobile-menu-btn {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+    display: none;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn i {
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background: #2a2a2a;
+    border-top: #343434;
+}
+
+.mobile-menu .top-menu {
+    display: block;
+}
+
+.mobile-menu .top-menu ul {
+    padding: 0;
+}
+
+.mobile-menu .top-menu ul li {
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu .top-menu ul li a {
+    padding: 0;
+    line-height: 40px;
+}
+
+.mobile-menu .top-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.phone {
+    position: absolute;
+    padding-right: 25px;
+    padding-left: 10px;
+    right: 0;
+    color: #d9d9d9;
+    line-height: 60px;
+    cursor: pointer;
+    transition: color .25s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.phone:hover {
+    color: #cce55e;
+}
+
+.phone i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+@media (max-width: 575.98px) {
+    #header .logo {
+        padding-left: 5px;
+    }
+
+    #header .phone {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        padding-right: 5px;
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        line-height: 55px;
+    }
+
+    .main-menu {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 1199.98px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* ================================================= */
+/* --------------- Header Slider CSS --------------- */
+/* ================================================= */
+
+#headerSlider {
+    position: relative;
+    max-width: 100%;
+    max-height: calc(100vh - 60px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#headerSlider img {
+
+    width: 100%;
+}
+
+#headerSlider .carousel-caption {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+#headerSlider .carousel-caption h1 {
+    color: #d9d9d9;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 767.98px) {
+    #headerSlider .carousel-caption h1 {
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #headerSlider .carousel-caption h1 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1;
+    }
+}
+
+#headerSlider .animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+/* ================================================= */
+/* ---------------- Welcome Section ---------------- */
+/* ================================================= */
+
+#about {
+    position: relative;
+    text-align: center;
+}
+
+
+#about-2 {
+    position: relative;
+    padding: 45px 0 60px 0;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+/* ================================================= */
+/* -------------- Section Header Style ------------- */
+/* ================================================= */
+
+.section-header {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-header h2 {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+}
+
+/* ================================================= */
+/* ----------------- Amenities Style --------------- */
+/* ================================================= */
+
+#amenities {
+    position: relative;
+    padding: 45px 0 15px 0;
+    text-align: center;
+}
+
+#amenities.home-amenities {
+    max-height: 100%;
+    background-image: url(../img/fundo-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#amenities.home-amenities:after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#amenities .container {
+    position: relative;
+    z-index: 1;
+}
+
+#amenities.home-amenities h2,
+#amenities.home-amenities h3,
+#amenities.home-amenities p {
+    color: #ffffff;
+}
+
+#amenities h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#amenities .icons {
+    margin-bottom: 30px;
+}
+
+#amenities .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+#amenities .icon.icon-1 {
+    background-image: url(../img/icon/shield-hover.png);
+}
+
+#amenities .icon.icon-1:hover {
+    background-image: url(../img/icon/shield.png);
+}
+
+#amenities .icon.icon-2 {
+    background-image: url(../img/icon/air-conditioner-hover.png);
+}
+
+#amenities .icon.icon-2:hover {
+    background-image: url(../img/icon/air-conditioner.png);
+}
+
+#amenities .icon.icon-3 {
+    background-image: url(../img/icon/bathtub-hover.png);
+}
+
+#amenities .icon.icon-3:hover {
+    background-image: url(../img/icon/bathtub.png);
+}
+
+#amenities .icon.icon-4 {
+    background-image: url(../img/icon/shower-hover.png);
+}
+
+#amenities .icon.icon-4:hover {
+    background-image: url(../img/icon/shower.png);
+}
+
+#amenities .icon.icon-5 {
+    background-image: url(../img/icon/towel-hover.png);
+}
+
+#amenities .icon.icon-5:hover {
+    background-image: url(../img/icon/towel.png);
+}
+
+#amenities .icon.icon-6 {
+    background-image: url(../img/icon/television-hover.png);
+}
+
+#amenities .icon.icon-6:hover {
+    background-image: url(../img/icon/television.png);
+}
+
+#amenities .icon.icon-7 {
+    background-image: url(../img/icon/wifi-hover.png);
+}
+
+#amenities .icon.icon-7:hover {
+    background-image: url(../img/icon/wifi.png);
+}
+
+#amenities .icon.icon-8 {
+    background-image: url(../img/icon/call-hover.png);
+}
+
+#amenities .icon.icon-8:hover {
+    background-image: url(../img/icon/call.png);
+}
+
+#amenities .icon.icon-9 {
+    background-image: url(../img/icon/minibar-hover.png);
+}
+
+#amenities .icon.icon-9:hover {
+    background-image: url(../img/icon/minibar.png);
+}
+
+#amenities .icon.icon-10 {
+    background-image: url(../img/icon/kitchen-hover.png);
+}
+
+#amenities .icon.icon-10:hover {
+    background-image: url(../img/icon/kitchen.png);
+}
+
+.container {
+     max-width: 1170px;
+}
+
+
+
+
+
+/** our_room section **/
+
+.our_room {
+     background-color: #f4f5f7;
+     padding: 60px 0 30px 0;
+     margin-top: 600px;
+}
+
+.our_room .titlepage {
+     text-align: center;
+}
+
+.our_room .titlepage p {
+     color: #121212;
+     font-size: 17px;
+     margin-top: 20px;
+}
+
+.our_room .room {
+     text-align: center;
+     background-color: #fff;
+     margin-bottom: 30px;
+     transition: ease-in all 0.5s;
+}
+
+.our_room .room .room_img {
+     overflow: hidden;
+}
+
+.our_room .room .room_img figure {
+     margin: 0;
+}
+
+.our_room .room .room_img figure img {
+     width: 100%;
+     transition: all .5s;
+}
+
+.our_room .room .room_img figure img:hover {
+     transform: scale(1.2);
+}
+
+.our_room .room .bed_room {
+     padding: 33px 30px;
+}
+
+.our_room .room .bed_room h3 {
+     color: #121212;
+     font-size: 25px;
+     line-height: 20px;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+     margin: auto;
+}
+
+#serv_hover:hover.room {
+     cursor: pointer;
+     box-shadow: 0px 0px 30px rgba(255, 9, 9, 0.15);
+     transition: ease-in all 0.5s;
+}
+
+
+
+
+.whatsApp{
+    position: fixed;
+    width: 40px;
+    right: 10px;
+    top:50vh;
+    z-index:1;
+}
+
+
+@media (max-width: 767.98px) 
+ {
+
+    .whatsApp{
+        
+        right: 16px;
+       
+    }
+
+}
+
+
+
+/** end banner section **/
+
+.titlepage {
+     text-align: center;
+     padding-bottom: 40px;
+}
+
+.titlepage h2 {
+     font-size: 35px;
+     color: #121212;
+     line-height: 45px;
+     font-weight: bold;
+     text-transform: uppercase;
+     padding: 0;
+}
+
+
+
+
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+
+
+
+
+/** our_room section **/
+
+.our_room {
+     background-color: #f4f5f7;
+     padding: 60px 0 30px 0;
+     margin-top: 90px;
+}
+
+
+
+
+
+/* ================================================= */
+/* ------------------ Footer Style ----------------- */
+/* ================================================= */
+
+#footer {
+    position: relative;
+    padding: 30px 0 25px 0;
+    text-align: center;
+    background: #222222;
+}
+
+#footer .social {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#footer a {
+    color: #d9d9d9;
+}
+
+#footer a:hover {
+    color: #ffffff;
+}
+
+#footer .social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px 10px;
+    background: #d9d9d9;
+    color: #222222;
+    font-size: 20px;
+}
+
+#footer .social a:hover {
+    background: #ffffff;
+    color: #cce55e;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 18px;
+}
