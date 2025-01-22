@@ -430,22 +430,6 @@ h6 {
     background-image: url(../img/icon/television.png);
 }
 
-#amenities .icon.icon-7 {
-    background-image: url(../img/icon/wifi-hover.png);
-}
-
-#amenities .icon.icon-7:hover {
-    background-image: url(../img/icon/wifi.png);
-}
-
-#amenities .icon.icon-8 {
-    background-image: url(../img/icon/call-hover.png);
-}
-
-#amenities .icon.icon-8:hover {
-    background-image: url(../img/icon/call.png);
-}
-
 #amenities .icon.icon-9 {
     background-image: url(../img/icon/minibar-hover.png);
 }
@@ -550,6 +534,10 @@ h6 {
         
         right: 16px;
        
+    }
+
+    .titlepage h2 {
+        font-size: 20px;
     }
 
 }
